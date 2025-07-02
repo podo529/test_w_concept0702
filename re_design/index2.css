@@ -1,0 +1,51 @@
+main {padding:20px; max-width:1920px; min-width:768px;}
+main .top {width:1245px;}
+main .top h1 {}
+main .top .brand {
+    display:grid; grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+main .top .brand .left {
+    height:527px; background:url(../images/0001.jpg) no-repeat center / cover;
+}
+main .top .brand .left .favorite001 {position:relative; top:10px; right:-560px;}
+main .top .brand .right {
+    display:flex; flex-flow:column nowrap; justify-content:space-between;
+}
+main .top .brand .right .name h2 {font-size:1.75rem; font-weight:700; margin-bottom:10px;}
+main .top .brand .right .name p {font-size:0.825rem; color:#888; margin-bottom:30px;}
+main .top .brand .right .name button {
+    font-size:1rem; border:1px solid #000;
+    padding:5px 10px;
+    line-height:100%;
+    margin-right:10px;
+}
+main .top .brand .right .bottom {display:flex; justify-content:space-between;}
+main .top .brand .right .bottom .product {width:195px;}
+main .top .brand .right .bottom .product > img {width:100%;}
+main .product_wrap {margin-top:50px; position:relative; width:1245px;}
+main .product_wrap .product_top {}
+main .product_wrap .product_top h1 {}
+main .product_wrap .product_top a {position:absolute; right:0; top:0;}
+main .product_wrap .product_bottom {display:flex; width:100%; justify-content:space-between;}
+main .product_wrap .product_bottom .product {width:195px;}
+
+/* 공통 */
+main h1 {font-weight:600; margin-bottom:20px; width:100%;}
+main .company {display:flex; justify-content:space-between;}
+main .company p {line-height:24px; font-weight:700; font-size:0.90rem;}
+main .product {}
+main .product h3 {font-size:0.85rem; margin:7px 0;}
+main .product p {font-weight:600;}
+main .product em {font-weight:600; color:#f00;}
+/* 반응형 */
+@media screen and (max-width:767px){
+    main {
+        max-width:767px;
+        min-width:320px;
+        padding-right:20px;
+    }
+    main .top .brand .right {display:none;}
+    .product_bottom {overflow:hidden; width:320px;}
+    .product_top > a {display:none;}
+}
