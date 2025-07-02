@@ -1,23 +1,22 @@
 main {padding:20px; max-width:1920px; min-width:768px;}
-main .top {width:1245px;}
+main .top {width:1199px;}
 main .top h1 {}
 main .top .brand {
-    display:grid; grid-template-columns:1fr 1fr;
-    gap:30px;
+    display:grid; grid-template-columns:460px 699px;
+    gap:41px;
 }
 main .top .brand .left {
-    height:527px; background:url(./images/0001.jpg) no-repeat center / cover;
+    height:527px;  background:url(../images/0001.jpg) no-repeat center / cover;
 }
-main .top .brand .left .favorite001 {position:relative; top:10px; right:-560px;}
+main .top .brand .left .favorite001 {position:relative; top:10px; right:-420px;}
 main .top .brand .right {
     display:flex; flex-flow:column nowrap; justify-content:space-between;
 }
 main .top .brand .right .name h2 {font-size:1.75rem; font-weight:700; margin-bottom:10px;}
-main .top .brand .right .name p {font-size:0.825rem; color:#888;}
+main .top .brand .right .name p {font-size:0.825rem; color:#888; margin-bottom:30px;}
 main .top .brand .right .bottom {display:flex; justify-content:space-between;}
-main .top .brand .right .bottom .product {width:195px;}
-main .top .brand .right .bottom .product > img {width:100%;}
-
+main .top .brand .right .bottom .product {}
+main .top .brand .right .bottom .product > img {width:223px;}
 main .product_wrap {margin-top:50px; position:relative; width:1245px;}
 main .product_wrap .product_top {}
 main .product_wrap .product_top h1 {}
@@ -41,6 +40,11 @@ main .product em {font-weight:600; color:#f00;}
         padding-right:20px;
     }
     main .top .brand .right {display:none;}
-    .product_bottom {overflow:hidden; width:320px;}
+    .product_bottom {width:430px;}
+    .product_bottom .product:nth-child(4),
+    .product_bottom .product:nth-child(5),
+    .product_bottom .product:nth-child(6)
+    {display:none;}
+    main .product_wrap .product_bottom {justify-content:left; gap:5.8px;}
     .product_top > a {display:none;}
 }
